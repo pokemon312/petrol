@@ -21,7 +21,7 @@ var firebaseConfig = {
               var data = snapshot.val();
               let lis=Object.keys(data);
               let lis2=Object.values(data);
-              var kms=lis2[1];
+              var kms=lis2[0];
               k=(Number(amount)/100*35);
               kms=kms+k;
               saveMessage(amount,k,kms);
