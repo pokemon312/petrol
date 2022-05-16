@@ -19,7 +19,7 @@ var firebaseConfig = {
     firebaseRef.once("value", function (snapshot) {
         var data = snapshot.val();
         let lis2=Object.values(data);
-        var k=lis2[1]-Number(ckms);
+        var k=lis2[0]-Number(ckms);
         console.log(k);        
         document.querySelector(".testing2").innerHTML += `
         <div class="cards">
